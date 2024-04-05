@@ -1,0 +1,108 @@
+//variables for background and color schemes
+$primary-background: #35374b;
+$secondary-background: #344955;
+$secondary-background2: #a2678a;
+$primary-color: #50727b;
+$secondary-color: #78a083;
+$font-color2: #eee4b1bb;
+$font-color3: #7fffd4;
+
+body {
+  background-color: $secondary-background;
+}
+
+/* Loader styles */
+.loader-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+
+  .loader {
+    border: 16px solid $primary-background;
+    border-top: 16px solid $primary-color;
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    animation: spin 2s linear infinite;
+  }
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* App styles */
+.App {
+  .App-header {
+    background-color: $secondary-background;
+    padding: 20px;
+    color: $secondary-color;
+
+    .App-header-nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      hr {
+        background-color: $font-color2;
+        height: 2px;
+      }
+    }
+  }
+
+  .App-data-users {
+    color: $font-color3;
+    hr {
+      color: #a2678a;
+    }
+    ul {
+      list-style-type: none;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: left;
+      gap: 5px;
+      margin: 10px 0;
+      li {
+        display: flex;
+        flex-direction: column;
+        justify-content: left;
+        margin: 10px 0;
+        padding: 10px;
+        background-color: $primary-background;
+        color: $font-color2;
+        border-radius: 5px;
+        box-shadow: 0 2px 4px rgba(255, 255, 255, 0.1);
+        ul {
+          padding: 2px;
+          display: flex;
+          flex-direction: row;
+          justify-content: space-around;
+          li {
+            width: 120px;
+            height: 60px;
+            color: rgb(0, 0, 0);
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            box-shadow: 0 2px 4px rgba(224, 218, 218, 0.644);
+            button {
+              color: rgb(226, 226, 226);
+              background-color: #e081b5;
+            }
+            .copied {
+              font-size: small;
+              padding: 2px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
