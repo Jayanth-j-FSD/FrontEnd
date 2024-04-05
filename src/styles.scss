@@ -17,7 +17,6 @@ body {
   justify-content: center;
   align-items: center;
   height: 100vh;
-
   .loader {
     border: 16px solid $primary-background;
     border-top: 16px solid $primary-color;
@@ -40,40 +39,38 @@ body {
 
 /* App styles */
 .App {
-  .App-header {
-    background-color: $secondary-background;
-    padding: 20px;
-    color: $secondary-color;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  .App-top-nav{
 
-    .App-header-nav {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      hr {
-        background-color: $font-color2;
-        height: 2px;
-      }
-    }
   }
-
-  .App-data-users {
+  .App-left-Menu {
+    padding: 10px;
+    position: fixed; /* Fix the left menu */
+    top: 40px; /* Adjust as needed based on top nav height */
+    left: 0;
+    bottom: 0;
+    width: 100px; /* Set a fixed width */
+    overflow-y: auto;
+  }
+  .App-data-colors {
+    padding: 10px;
+    flex: 1; /* Allow content to expand and fill remaining space */
+    overflow-y: auto;
     color: $font-color3;
     hr {
       color: #a2678a;
+      width: 80%; // Set width to fill container
     }
     ul {
       list-style-type: none;
       padding: 0;
       display: flex;
       flex-direction: column;
-      justify-content: left;
-      gap: 5px;
+      gap: 10px;
       margin: 10px 0;
       li {
-        display: flex;
-        flex-direction: column;
-        justify-content: left;
-        margin: 10px 0;
         padding: 10px;
         background-color: $primary-background;
         color: $font-color2;
@@ -85,16 +82,9 @@ body {
           flex-direction: row;
           justify-content: space-around;
           li {
-            width: 120px;
-            height: 60px;
-            color: rgb(0, 0, 0);
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-            box-shadow: 0 2px 4px rgba(224, 218, 218, 0.644);
+            width: 100%; // Adjust width for mobile
             button {
-              color: rgb(226, 226, 226);
-              background-color: #e081b5;
+              width: 100%; // Adjust width for mobile
             }
             .copied {
               font-size: small;
@@ -106,3 +96,94 @@ body {
     }
   }
 }
+
+// Mobile responsiveness
+
+
+
+
+
+
+
+
+
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.top-nav {
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+.left-menu {
+  background-color: #ccc;
+  color: #333;
+  padding: 10px;
+  width: 300px;
+  position: fixed;
+  top: 70px; /* Adjust as needed based on top nav height */
+  bottom: 0;
+  left: 0;
+  overflow-y: auto;
+}
+
+.content {
+  display: flex;
+  flex: 1;
+  overflow-y: auto;
+  padding-left: 120px; /* Adjust based on left menu width */
+  .App-data-colors {
+    padding-top: 80px;
+    padding-left: 210px;
+    flex: 1; /* Allow content to expand and fill remaining space */
+    overflow-y: auto;
+    color: $font-color3;
+    hr {
+      color: #a2678a;
+      width: 80%; // Set width to fill container
+    }
+    ul {
+      list-style-type: none;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      margin: 10px 0;
+      li {
+        padding: 10px;
+        background-color: $primary-background;
+        color: $font-color2;
+        border-radius: 5px;
+        box-shadow: 0 2px 4px rgba(255, 255, 255, 0.1);
+        ul {
+          padding: 2px;
+          display: flex;
+          flex-direction: row;
+          justify-content: space-around;
+          li {
+            width: 100%; // Adjust width for mobile
+            button {
+              width: 100%; // Adjust width for mobile
+            }
+            .copied {
+              font-size: small;
+              padding: 2px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+

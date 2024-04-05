@@ -3,6 +3,8 @@ import React, { useState, useEffect } from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import { getUsers } from "./api";
 import "./components/Loader.jsx";
+import NaviBar from "./components/NaviBar.js";
+
 function App() {
   // const [users, setUsers] = useState([]);
   // const [loading, setLoading] = useState(true); // Add loading state
@@ -164,40 +166,101 @@ function App() {
       .catch((err) => console.error("Error copying to clipboard:", err));
   };
   return (
-    <div className="App">
-      <header className="App-header">
-        <div className="App-header-nav"></div>
-      </header>
-      <div className="App-data-users">
-        <h1>User List</h1>
-        <hr></hr>
-        {/* <ul>
-          {users.map((user) => (
-            <li key={user.id}>{user.first_name}</li>
-          ))}
-        </ul> */}
-        <ul>
-          {Object.entries(colors).map(([colorName, shades]) => (
-            <li key={colorName}>
-              <strong>{colorName}</strong>
-              <ul>
-                {shades.map((shade, index) => (
-                  <li key={index} style={{ backgroundColor: shade }} onClick={() => handleCopyToClipboard(shade)}>
-                    <span>{shade}</span>
-                    <button onClick={() => handleCopyToClipboard(shade)}>
-                     Copy
-                    </button>
-                    {copiedText === shade && (
-                      <span className="copied" style={{ marginLeft: "0.5rem", color: "green" }}>
-                        Copied!
-                      </span>
-                    )}
-                  </li>
-                ))}
-              </ul>
-            </li>
-          ))}
-        </ul>
+    // <div className="App">
+    // <div className="App-top-nav">
+    //   <NaviBar></NaviBar>
+    // </div>
+
+    //   <div className="App-data-colors">
+    //     <h1>Colour codes</h1>
+    //     {/* <ul>
+    //       {users.map((user) => (
+    //         <li key={user.id}>{user.first_name}</li>
+    //       ))}
+    //     </ul> */}
+    //     <div>
+    //       <ul>
+    //         {Object.entries(colors).map(([colorName, shades]) => (
+    //           <li key={colorName}>
+    //             <strong>{colorName}</strong>
+    //             <ul>
+    //               {shades.map((shade, index) => (
+    //                 <li
+    //                   key={index}
+    //                   style={{ backgroundColor: shade }}
+    //                   onClick={() => handleCopyToClipboard(shade)}
+    //                 >
+    //                   <span>{shade}</span>
+    //                   <button onClick={() => handleCopyToClipboard(shade)}>
+    //                     Copy
+    //                   </button>
+    //                   {copiedText === shade && (
+    //                     <span
+    //                       className="copied"
+    //                       style={{ marginLeft: "0.5rem", color: "green" }}
+    //                     >
+    //                       Copied!
+    //                     </span>
+    //                   )}
+    //                 </li>
+    //               ))}
+    //             </ul>
+    //           </li>
+    //         ))}
+    //       </ul>
+    //     </div>
+    //   </div>
+    // </div>
+    <div class="wrapper">
+      <div class="top-nav">
+        <div className="App-top-nav">
+          <NaviBar></NaviBar>
+        </div>
+      </div>
+      <div class="left-menu">
+        <div className="App-left-Menu">
+          <ul>
+            <li>shlasdgf</li>
+            <li>shlasdgf</li>
+            <li>shlasdgf</li>
+            <li>shlasdgf</li>
+
+            <li>shlasdgf</li>
+          </ul>
+        </div>
+      </div>
+      <div class="content">
+        <div class="App-data-colors" >
+          <ul>
+            {Object.entries(colors).map(([colorName, shades]) => (
+              <li key={colorName}>
+                <strong>{colorName}</strong>
+                <ul>
+                  {shades.map((shade, index) => (
+                    <li
+                      key={index}
+                      style={{ backgroundColor: shade }}
+                      onClick={() => handleCopyToClipboard(shade)}
+                    >
+                      <span>{shade}</span>
+                      <button onClick={() => handleCopyToClipboard(shade)}>
+                        Copy
+                      </button>
+                      {copiedText === shade && (
+                        <span
+                          className="copied"
+                          style={{ marginLeft: "0.5rem", color: "green" }}
+                        >
+                          Copied!
+                        </span>
+                      )}
+                    </li>
+                  ))}
+                </ul>
+              </li>
+            ))}
+          </ul>
+        </div>
       </div>
     </div>
   );
