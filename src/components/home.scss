@@ -5,6 +5,26 @@
   height: 100vh;
 }
 
+.error {
+  position: absolute;
+  bottom: 90px;
+  left: 250px;
+  color: red;
+  animation: popout 1s ease-in-out 2;
+}
+
+@keyframes popout {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
 .left {
   flex: 1;
   display: flex;
@@ -13,7 +33,7 @@
     margin-top: 10px;
     margin-left: 10px;
   }
-  .logox{
+  .logox {
     height: 40px;
     color: red;
   }
@@ -64,9 +84,9 @@
         cursor: pointer;
         border-radius: 20px;
       }
-      #sub:hover{
+      #sub:hover {
         color: white;
-        background-color:  rgb(84, 131, 218);
+        background-color: rgb(84, 131, 218);
         transition: background-color 1s ease;
         transition: color 1s ease;
       }
@@ -79,9 +99,9 @@
   justify-content: center;
   align-items: center;
   width: 50%;
-  background-image: url('../Assets/Untitled design (1).png');
+  background-image: url("../Assets/Untitled design (1).png");
   background-size: cover;
-  background-repeat: no-repeat; 
+  background-repeat: no-repeat;
   background-position: center;
   .mid {
     height: 60vh;
@@ -131,13 +151,13 @@
       color: red;
     }
     .smalltext {
-        margin-top: 120px;
-        font-size: large;
-        color: rgb(255, 255, 255);
-        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Adding text shadow */
-        word-spacing: 5px; /* Adjusting word spacing */
-      }
-      
+      margin-top: 120px;
+      font-size: large;
+      color: rgb(255, 255, 255);
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Adding text shadow */
+      word-spacing: 5px; /* Adjusting word spacing */
+    }
+
     .peopleImg {
       height: 120px;
     }

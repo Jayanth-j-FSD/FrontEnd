@@ -71,10 +71,18 @@ function Home() {
                   Forgot password?
                 </button>
                 <input id="sub" type="submit" value="Login" />
-                {errorMessage && (
-                  <p style={{ color: "red" }}>{errorMessage}</p>
-                )}
               </form>
+              {errorMessage && (
+                <p
+                  className="error"
+                  style={{
+                    transformOrigin: "center",
+                    animationIterationCount: "infinite",
+                  }}
+                >
+                  {errorMessage}
+                </p>
+              )}
             </div>
           </div>
         </div>
@@ -91,8 +99,7 @@ function Home() {
             </span>
             <p>We</p>
             <p>
-              Love{" "}
-              <img src={love} className="loveLogo" alt="Background" />
+              Love <img src={love} className="loveLogo" alt="Background" />
             </p>
             <p>Website</p>
             <p className="smalltext">
