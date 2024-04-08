@@ -40,6 +40,18 @@ body {
   display: flex;
   flex-direction: column;
   height: 100vh;
+  .top-nav {
+    background-color: #333;
+    color: #ffffff;
+    padding: 10px;
+    height: 60px;
+    text-align: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+  }
+
   .App-left-Menu {
     display: flex;
     flex-direction: column;
@@ -48,97 +60,26 @@ body {
     padding: 10px;
     padding-top: 40px;
     position: fixed; /* Fix the left menu */
-    top: 40px; /* Adjust as needed based on top nav height */
+    top: 80px; /* Adjust as needed based on top nav height */
     left: 0;
     bottom: 0;
     overflow-y: auto;
     background-color: rgb(243, 242, 242);
+    .home-btn,
+    .color-btn,
+    .pallete-btn,
+    .template-btn {
+      margin-left: 20px;
+      width: 170px;
+      height: 30px;
+      cursor: pointer;
+    }
   }
-  .home-btn,
-  .color-btn,
-  .pallete-btn,
-  .template-btn {
-    margin-left: 20px;
-    width: 170px;
-    height: 30px;
-    cursor: pointer;
 
-  }
-}
-.wrapper {
-  display: flex;
-  flex-direction: column;
-  height: 100vh;
-}
-
-.top-nav {
-  background-color: #333;
-  color: #ffffff;
-  padding: 10px;
-  text-align: center;
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-}
-
-.left-menu {
-  background-color: #ffffff;
-  color: #333;
-  padding: 10px;
-  width: 300px;
-  position: fixed;
-  top: 70px; /* Adjust as needed based on top nav height */
-  bottom: 0;
-  left: 0;
-  overflow-y: auto;
-}
-
-.content {
-  display: flex;
-  flex: 1;
-  overflow-y: auto;
-  padding-left: 120px; /* Adjust based on left menu width */
-  .App-data-colors {
-    padding-top: 80px;
-    padding-left: 210px;
-    flex: 1; /* Allow content to expand and fill remaining space */
+  .content {
+    display: flex;
+    flex: 1;
     overflow-y: auto;
-    color: $font-color3;
-    hr {
-      color: #a2678a;
-      width: 80%; // Set width to fill container
-    }
-    ul {
-      list-style-type: none;
-      padding: 0;
-      display: flex;
-      flex-direction: column;
-      gap: 10px;
-      margin: 10px 0;
-      li {
-        padding: 10px;
-        background-color: $primary-background;
-        color: $font-color2;
-        border-radius: 5px;
-        box-shadow: 0 2px 4px rgba(255, 255, 255, 0.1);
-        ul {
-          padding: 2px;
-          display: flex;
-          flex-direction: row;
-          justify-content: space-around;
-          li {
-            width: 100%; // Adjust width for mobile
-            button {
-              width: 100%; // Adjust width for mobile
-            }
-            .copied {
-              font-size: small;
-              padding: 2px;
-            }
-          }
-        }
-      }
-    }
+    padding-left: 120px;
   }
 }

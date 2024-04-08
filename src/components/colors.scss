@@ -1,0 +1,47 @@
+//variables for background and color schemes
+$primary-background: #35374b;
+$secondary-background: #344955;
+$secondary-background2: #a2678a;
+$primary-color: #50727b;
+$secondary-color: #78a083;
+$font-color2: #eee4b1bb;
+$font-color3: #7fffd4;
+
+.colorsTab{
+    padding-top: 80px;
+    padding-left: 230px;
+    flex: 1; 
+    overflow-y: auto;
+    color: $font-color3;
+    ul {
+      list-style-type: none;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      margin: 10px 0;
+      li {
+        padding: 10px;
+        background-color: $primary-background;
+        color: $font-color2;
+        border-radius: 5px;
+        box-shadow: 0 2px 4px rgba(255, 255, 255, 0.1);
+        ul {
+          padding: 2px;
+          display: flex;
+          flex-direction: row;
+          justify-content: space-around;
+          li {
+            width: 100%; // Adjust width for mobile
+            button {
+              width: 100%; // Adjust width for mobile
+            }
+            .copied {
+              font-size: small;
+              padding: 2px;
+            }
+          }
+        }
+      }
+    }
+  }

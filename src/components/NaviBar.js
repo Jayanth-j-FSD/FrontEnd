@@ -1,6 +1,5 @@
 import React from "react";
 import Button from "react-bootstrap/Button";
-import Container from "react-bootstrap/Container";
 import Form from "react-bootstrap/Form";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
@@ -9,7 +8,7 @@ import "./Navbar.scss";
 
 function NaviBar() {
   return (
-    <Navbar expand="lg" className="navbarMain">
+    <Navbar className="navbarMain">
       <Navbar.Toggle aria-controls="navbarScroll" />
       <Navbar.Collapse id="navbarScroll">
         <Nav className="navLinks" navbarScroll>

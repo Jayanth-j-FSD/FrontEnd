@@ -1,19 +1,19 @@
 import "./styles.scss";
-import React, { useState, useEffect } from "react";
-import "./components/Loader.jsx";
-import NaviBar from "./components/NaviBar.js";
-import DynamicGraph from "./components/DynamicGraph.js";
-import Colors from "./components/Colors.js";
+import React from "react";
+// import NaviBar from "./components/NaviBar.js";
+// import DynamicGraph from "./components/DynamicGraph.js";
+// import Colors from "./components/Colors.js";
+import Home from "./components/Home.js";
 function App() {
-  const [tabState, setTabState] = useState("home");
+  // const [tabState, setTabState] = useState("home");
 
-  const handleClick = (name) => {
-    setTabState(name);
-  };
+  // const handleClick = (name) => {
+  //   setTabState(name);
+  // };
 
   return (
     <div class="App">
-      <div class="top-nav">
+      {/* <div class="top-nav">
         <div className="App-top-nav">
           <NaviBar></NaviBar>
         </div>
@@ -56,7 +56,8 @@ function App() {
             )}
           </div>
         </div>
-      </div>
+      </div> */}
+      <Home></Home>
     </div>
   );
 }

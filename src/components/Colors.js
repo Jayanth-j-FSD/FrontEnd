@@ -1,5 +1,6 @@
 import React from "react";
 import { useState } from "react";
+import "./colors.scss"
 function Colors() {
   const [copiedText, setCopiedText] = useState(null);
 
@@ -137,7 +138,7 @@ function Colors() {
       .catch((err) => console.error("Error copying to clipboard:", err));
   };
   return (
-    <div>
+    <div className="colorsTab">
       <ul>
         {Object.entries(colors).map(([colorName, shades]) => (
           <li key={colorName}>
