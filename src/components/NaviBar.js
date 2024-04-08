@@ -10,11 +10,12 @@ import "./Navbar.scss";
 function NaviBar() {
   return (
     <Navbar expand="lg" className="navbarMain">
+      <Navbar.Toggle aria-controls="navbarScroll" />
       <Navbar.Collapse id="navbarScroll">
         <Nav className="navLinks" navbarScroll>
           <Nav.Link href="#action1">Home</Nav.Link>
           <Nav.Link href="#action2">Link</Nav.Link>
-          <NavDropdown title="Link" id="navbarScrollingDropdown">
+          <NavDropdown title="Link" id="navbarScrollingDropdown" drop="down">
             <NavDropdown.Item href="#action3">Action</NavDropdown.Item>
             <NavDropdown.Item href="#action4">Another action</NavDropdown.Item>
             <NavDropdown.Divider />
