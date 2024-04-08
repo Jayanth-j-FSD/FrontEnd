@@ -1,4 +1,5 @@
 # Getting Started with Create React App
+# Frontend Colour Picker APP 
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
