@@ -44,7 +44,8 @@
       gap: 30px;
       input {
         height: 50px;
-        color: beige;
+        color: rgb(69, 31, 240);
+        font-size: large;
         background-color: aliceblue;
         border-left: 1px solid red;
       }
@@ -55,12 +56,19 @@
         cursor: pointer;
       }
       #sub {
-        color: rgb(255, 107, 97);
+        color: rgb(31, 212, 86);
         font-size: large;
-        background-color: rgb(38, 77, 110);
+        background-color: rgb(51, 101, 145);
         border: none;
         word-spacing: 55px;
         cursor: pointer;
+        border-radius: 20px;
+      }
+      #sub:hover{
+        color: white;
+        background-color:  rgb(84, 131, 218);
+        transition: background-color 1s ease;
+        transition: color 1s ease;
       }
     }
   }
