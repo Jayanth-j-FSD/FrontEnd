@@ -1,3 +1,14 @@
+
+$primary-color: #a0d1df;
+$secondary-color: #7cbd8e;
+$font-color2: #eee4b1bb;
+$font-color3: #e3faf2;
+$plain: #eee;
+$font-mian: #727272;
+$btn-back: #fb6c00;
+$back: #fafafa;
+$font-mian: #48ac9e;
+$btn-back: #FB6C00;
 .main {
   display: flex;
   color: white;
@@ -33,9 +44,8 @@
     margin-top: 10px;
     margin-left: 10px;
   }
-  .logox {
+  .img {
     height: 40px;
-    color: red;
   }
 
   .centered-content {
@@ -109,8 +119,8 @@
     display: flex;
     flex-direction: column;
     padding: 20px;
-    color: rgb(84, 131, 218);
-    box-shadow: 2px 0px 10px 2px rgba(226, 216, 75, 0.884);
+    color: rgba(106, 169, 240, 0.863);
+    box-shadow: 2px 0px 10px 2px rgba(131, 185, 87, 0.692);
     background-color: rgb(146, 206, 203);
     position: relative;
     border-radius: 10px;

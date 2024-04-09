@@ -41,7 +41,7 @@ function Home() {
     <div className="main">
       <div className="left">
         <div className="logo">
-          <img src={logo2} alt="logo" className="logox" />
+          <img src={logo2} alt="logo" className="img" />
         </div>
         <div className="centered-content">
           <div className="login">
