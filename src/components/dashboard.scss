@@ -8,19 +8,23 @@ $font-color3: #e3faf2;
 $plain: #eee;
 $font-mian: #48ac9e;
 $btn-back: #FB6C00;
+
 .dash-main {
   width: 100%;
   height: auto;
-  background-color: #C4C4C41A;
+  // background-color: $primary-background;
   color: $plain;
+
   .top-nav {
     display: flex;
     justify-content: flex-start;
     align-items: center;
+
     h4 {
       margin-left: 20px;
     }
   }
+
   .tab-section {
     display: flex;
     flex-direction: row;
@@ -29,41 +33,48 @@ $btn-back: #FB6C00;
     justify-content: flex-start;
     gap: 40px;
     margin: 10px 10px 20px 30px;
+
     .tab {
       display: flex;
       flex-direction: row;
       align-items: center;
       gap: 15px;
       padding: 2px;
-      background-color: #48ac9e;
+      background-color: $font-mian;
       color: white;
       border-radius: 10px;
       box-shadow: 0px 0px 30px 0px rgba(134, 134, 134, 0.555);
+
       img {
         margin: 5px;
         height: 40px;
         width: 40px;
         padding: 5px;
         border-radius: 50px;
-        background-color: #3dcf55e1;
+        background-color: rgba(255, 255, 255, 0.686);
       }
-      div{
-        color: rgb(255, 255, 255);
+
+      div {
+        color: $plain;
         margin: 2px 2px;
       }
-      p{
+
+      p {
         color: rgba(71, 250, 71, 0.774);
         margin: 5px 10px;
         display: flex;
         justify-content: end;
       }
-      .like{
+
+      .like {
         background-color: #3742FA;
       }
-      .cross{
+
+      .cross {
         background-color: #FFA502;
       }
-      .alert{
+
+      .alert {
         background-color: #ff4757;
       }
     }

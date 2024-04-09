@@ -4,9 +4,9 @@ import "./home-screen.scss";
 import face from "../Assets/Mask group.png";
 import { useState } from "react";
 import Dashboard from "./Dashboard";
-
+import Coupons from "./Coupons";
 function HomeScreen() {
-  const [tabState, setTabState] = useState("");
+  const [tabState, setTabState] = useState("dashboard");
   //   const navigate = useNavigate();
 
   const handleTab = (name) => {
@@ -36,13 +36,14 @@ function HomeScreen() {
             </div>
           </div>
         </div>
+        <div className="logout">Logout</div>
       </div>
       <div className="display">
         <div className="tabs">
           {tabState === "dashboard" ? (
             <Dashboard />
           ) : tabState === "Coupons" ? (
-            "coupons"
+            <Coupons/>
           ) : (
             tabState
           )}

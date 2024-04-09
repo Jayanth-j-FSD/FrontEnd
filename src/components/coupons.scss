@@ -1,0 +1,48 @@
+// coupons.scss
+
+.coupons-container {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+}
+
+h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  th {
+    color: #727272;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 19.5px;
+    text-align: left;
+  }
+  td {
+    font-family: Montserrat;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 19.5px;
+    text-align: left;
+    color: rgb(56, 55, 55);
+  }
+  td:nth-child(2) {
+    border: 1px solid #727272;
+  }
+  th,
+  td {
+    border-bottom: 1px solid #ddd;
+    padding: 9px;
+  }
+
+  tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+
+  tr:hover {
+    background-color: #6bb5d8c9;
+  }
+}

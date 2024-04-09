@@ -1,175 +1,190 @@
+$primary-color: #a0d1df; // Light blue
+$secondary-color: #7cbd8e; // Light green
+$font-color1: #eee4b1bb; // Pale yellow
+$font-color2: #48ac9e; // Dark teal
+$accent-color: #fb6c00; // Orange
+$btn-back: #fb6c00; // Orange
+$back: #fafafa; // Light gray
 
-$primary-color: #a0d1df;
-$secondary-color: #7cbd8e;
-$font-color2: #eee4b1bb;
-$font-color3: #e3faf2;
-$plain: #eee;
-$font-mian: #727272;
-$btn-back: #fb6c00;
-$back: #fafafa;
-$font-mian: #48ac9e;
-$btn-back: #FB6C00;
 .main {
   display: flex;
   color: white;
   font-family: Arial, Helvetica, sans-serif;
   height: 100vh;
-}
 
-.error {
-  position: absolute;
-  bottom: 90px;
-  left: 250px;
-  color: red;
-  animation: popout 1s ease-in-out 2;
-}
-
-@keyframes popout {
-  0% {
-    transform: scale(1);
-  }
-  50% {
-    transform: scale(1.2);
-  }
-  100% {
-    transform: scale(1);
-  }
-}
-
-.left {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  .logo {
-    margin-top: 10px;
-    margin-left: 10px;
-  }
-  .img {
-    height: 40px;
+  .error {
+    position: absolute;
+    font-weight: 300;
+    bottom: 270px;
+    left: 290px;
+    color: rgb(255, 34, 34);
+    animation: popout 2.5s ease-in-out 1;
+    text-shadow: 0px 0px 4px rgba(233, 233, 233, 0.5);
   }
 
-  .centered-content {
+  @keyframes popout {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.2);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+
+  .left {
     flex: 1;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    border: 2px white;
-    .login {
-      .welcome {
-        font-size: 50px;
-        p {
-          margin-bottom: 1px;
-        }
-      }
-      .text {
-        p {
-          margin-top: 1px;
-        }
-      }
+
+    .logo {
+      margin-top: 10px;
+      margin-left: 10px;
     }
-    form {
+
+    .img {
+      height: 40px;
+    }
+
+    .centered-content {
+      flex: 1;
       display: flex;
       flex-direction: column;
-      gap: 30px;
-      input {
-        height: 50px;
-        color: rgb(69, 31, 240);
-        font-size: large;
-        background-color: aliceblue;
-        border-left: 1px solid red;
+      align-items: center;
+      border: 2px white;
+      margin-top: 40px;
+
+      .login {
+        .welcome {
+          font-size: 50px;
+
+          p {
+            margin-bottom: 1px;
+          }
+        }
+
+        .text {
+          p {
+            margin-top: 1px;
+          }
+        }
       }
-      button {
-        border: none;
-        background: none;
-        color: white;
-        cursor: pointer;
-      }
-      #sub {
-        color: rgb(31, 212, 86);
-        font-size: large;
-        background-color: rgb(51, 101, 145);
-        border: none;
-        word-spacing: 55px;
-        cursor: pointer;
-        border-radius: 20px;
-      }
-      #sub:hover {
-        color: white;
-        background-color: rgb(84, 131, 218);
-        transition: background-color 1s ease;
-        transition: color 1s ease;
+
+      form {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+
+        input {
+          height: 50px;
+          color: rgb(69, 31, 240);
+          font-size: large;
+          background-color: $back;
+          border-left: 1px solid red;
+        }
+
+        button {
+          border: none;
+          background: none;
+          color: white;
+          cursor: pointer;
+        }
+
+        #sub {
+          color: rgb(221, 221, 221);
+          font-size: large;
+          background-color: rgb(51, 101, 145);
+          border: none;
+          word-spacing: 55px;
+          cursor: pointer;
+          border-radius: 20px;
+        }
+
+        #sub:hover {
+          color: white;
+          background-color: rgb(84, 131, 218);
+          transition: background-color 0.5s ease;
+          transition: color 0.5s ease;
+          box-shadow: 0 0 20px 1px rgb(197, 197, 197);
+          transition: box-shadow 0.5s ease;
+        }
       }
     }
   }
-}
-.right {
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 50%;
-  background-image: url("../Assets/Untitled design (1).png");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  .mid {
-    height: 60vh;
-    width: 70%;
-    display: flex;
-    flex-direction: column;
-    padding: 20px;
-    color: rgba(106, 169, 240, 0.863);
-    box-shadow: 2px 0px 10px 2px rgba(131, 185, 87, 0.692);
-    background-color: rgb(146, 206, 203);
-    position: relative;
-    border-radius: 10px;
 
-    .innerRight {
-      position: absolute;
-      top: 0;
-      right: 0;
-      bottom: 0;
-      width: 50%; // Adjust width as needed
+  .right {
+    position: fixed;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    background-image: url("../Assets/Untitled design (1).png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    .mid {
+      height: 60vh;
+      width: 70%;
+      display: flex;
+      flex-direction: column;
+      padding: 20px;
+      color: rgba(106, 169, 240, 0.863);
+      box-shadow: 2px 0px 10px 2px rgba(131, 185, 87, 0.692);
+      background-color: rgb(146, 206, 203);
+      position: relative;
+      border-radius: 10px;
+
+      .innerRight {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        width: 50%; // Adjust width as needed
+
+        .peopleImg {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+      }
+
+      .innerLeft {
+        flex: 1;
+        z-index: 1;
+      }
+
+      .rightLogo {
+        height: 40px;
+        width: 40px;
+      }
+
+      p {
+        font-size: 30px;
+        padding: 0px;
+        margin-top: 20px;
+      }
+
+      .loveLogo {
+        height: 20px;
+        width: 20px;
+        color: red;
+      }
+
+      .smalltext {
+        margin-top: 120px;
+        font-size: large;
+        color: rgb(255, 255, 255);
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Adding text shadow */
+        word-spacing: 5px; /* Adjusting word spacing */
+      }
 
       .peopleImg {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
+        height: 120px;
       }
-    }
-
-    .innerLeft {
-      flex: 1;
-      z-index: 1;
-    }
-
-    .rightLogo {
-      height: 40px;
-      width: 40px;
-    }
-
-    p {
-      font-size: 30px;
-      padding: 0px;
-      margin-top: 20px;
-    }
-
-    .loveLogo {
-      height: 20px;
-      width: 20px;
-      color: red;
-    }
-    .smalltext {
-      margin-top: 120px;
-      font-size: large;
-      color: rgb(255, 255, 255);
-      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Adding text shadow */
-      word-spacing: 5px; /* Adjusting word spacing */
-    }
-
-    .peopleImg {
-      height: 120px;
     }
   }
 }
