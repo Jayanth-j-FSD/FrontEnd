@@ -3,7 +3,7 @@ import { useState } from "react";
 import "./colors.scss"
 function Colors() {
   const [copiedText, setCopiedText] = useState(null);
-
+// colour picker division   can be imported and use it.
   const colors = {
     red: [
       "#FF0000",
