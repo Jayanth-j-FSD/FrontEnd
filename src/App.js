@@ -14,6 +14,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/forgot-password" element={<ForgotPassword />} />
         <Route path="/update-password" element={<UpdatePassword />} />
+    
         <Route path="/home-screen" element={<HomeScreen />}></Route>
         {/* <Route path="/dash-board" element={<Dashboard />}></Route> */}
       </Routes>

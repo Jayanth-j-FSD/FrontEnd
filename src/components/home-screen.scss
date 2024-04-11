@@ -1,10 +1,10 @@
-$primary-color: #3b6978;      // Dark teal
-$secondary-color: #f2f2f2;    // Light gray
-$font-color1: #333;            // Dark gray
-$font-color2: #666;            // Medium gray
-$accent-color: #fb6c00;        // Orange
-$btn-back: #fb6c00;            // Orange
-
+$primary-color: #c4c4c41a; // Dark teal
+$secondary-color: #ffffff; // Light gray
+$font-color1: #333; // Dark gray
+$font-color2: #666; // Medium gray
+$accent-color: #fb6c00; // Orange
+$btn-back: #fb6c00; // Orange
+$border: #fb6c0033;
 .main {
   .left-menu {
     display: flex;
@@ -15,13 +15,29 @@ $btn-back: #fb6c00;            // Orange
       display: flex;
       align-items: center;
       justify-content: flex-start;
-      font-size: 25px;
       color: $font-color1;
-      border: 1px dashed $accent-color;
+      width: 248.5px;
+      height: 70.5px;
+      top: 103.5px;
+      left: 26.5px;
+      gap: 0px;
+      border: 1px 0px 0px 0px dashed $border;
+      opacity: 0px;
+      p {
+        font-family: Quicksand;
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 20px;
+        text-align: left;
+      }
       img {
         margin: 10px;
-        height: 40px;
-        width: 40px;
+        width: 50.75px;
+        height: 50.75px;
+        top: 114.75px;
+        left: 70.48px;
+        gap: 0px;
+        opacity: 0px;
       }
     }
 
@@ -52,8 +68,9 @@ $btn-back: #fb6c00;            // Orange
         font-size: 25px;
         color: $font-color1;
         display: block;
-        i {
-          color: rgba(154, 154, 155, 0.938);
+        background-color: #fafafa;
+        img {
+          padding-right: 10px;
         }
       }
 
@@ -67,8 +84,8 @@ $btn-back: #fb6c00;            // Orange
         cursor: pointer;
         transition: background-color 0.5s ease-in-out;
         transition: color 0.5s ease-in-out;
-        i {
-          color: $secondary-color;
+        img {
+          color: white;
           transition: color 0.5s ease-in-out;
         }
       }

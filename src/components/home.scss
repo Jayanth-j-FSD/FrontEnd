@@ -1,5 +1,5 @@
-$primary-color: #a0d1df; // Light blue
-$secondary-color: #7cbd8e; // Light green
+$primary-color:#c4c4c42c; // Light blue
+$secondary-color: #C4C4C41A; // Light green
 $font-color1: #eee4b1bb; // Pale yellow
 $font-color2: #48ac9e; // Dark teal
 $accent-color: #fb6c00; // Orange
@@ -115,7 +115,6 @@ $back: #fafafa; // Light gray
   }
 
   .right {
-    position: fixed;
     height: 100vh;
     display: flex;
     justify-content: center;

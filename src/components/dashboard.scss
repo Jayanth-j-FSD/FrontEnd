@@ -8,6 +8,7 @@ $font-color3: #e3faf2;
 $plain: #eee;
 $font-mian: #48ac9e;
 $btn-back: #FB6C00;
+$green: rgba(96, 240, 96, 0.719);
 
 .dash-main {
   width: 100%;
@@ -66,6 +67,9 @@ $btn-back: #FB6C00;
         justify-content: end;
       }
 
+      .tick {
+        background-color: $green;
+      }
       .like {
         background-color: #3742FA;
       }

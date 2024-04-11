@@ -12,7 +12,7 @@ function Dashboard() {
       </div>
       <div className="tab-section">
         <div className="tab">
-          <img src={tick}></img>
+          <img src={tick} className="tick"></img>
           <div>
             <h5>12000</h5>
             <p>Active coupons</p>

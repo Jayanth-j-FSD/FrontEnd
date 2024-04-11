@@ -1,16 +1,22 @@
 import React from "react";
-// import { useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import "./home-screen.scss";
 import face from "../Assets/Mask group.png";
 import { useState } from "react";
 import Dashboard from "./Dashboard";
 import Coupons from "./Coupons";
+import dashboardIcon from "../Assets/dashboard (1) 1.png";
+import phone from "../Assets/smartphone (1) 1 (2).png";
+import tag from "../Assets/Vector.png";
+import bag from "../Assets/bag 1 (1).png";
 function HomeScreen() {
   const [tabState, setTabState] = useState("dashboard");
-  //   const navigate = useNavigate();
+  const navigate = useNavigate();
 
+  const handleHome = () => {
+    navigate("/home-screen");
+  };
   const handleTab = (name) => {
-    // navigate("/dash-board");
     setTabState(name);
   };
 
@@ -19,20 +25,23 @@ function HomeScreen() {
       <div className="left-menu">
         <div className="menu-list">
           <div className="logo-section">
-            <img src={face} className="image-logo"></img>Website
+            <img src={face} className="image-logo" onClick={handleHome}></img>
+
+            <p>Anna enabel</p>
+            <p>Admin</p>
           </div>
           <div className="tabs-list">
-            <div onClick={() => handleTab("dashboard")}>
-              <i>☺</i>Dashboard
+            <div onClick={() => handleTab("dashboard")} className="tabs">
+              <img src={dashboardIcon} className="icon"></img>Dashboard
             </div>
-            <div onClick={() => handleTab("Coupons")}>
-              <i>☺</i>Coupons
+            <div onClick={() => handleTab("Coupons")} className="tabs">
+              <img src={phone} className="icon"></img>Coupons
             </div>
-            <div onClick={() => handleTab("History")}>
-              <i>☺</i>History
+            <div onClick={() => handleTab("History")} className="tabs">
+              <img src={tag} className="icon"></img>History
             </div>
-            <div onClick={() => handleTab("Settings")}>
-              <i>☺</i>Settings
+            <div onClick={() => handleTab("Settings")} className="tabs">
+              <img src={bag} className="icon"></img>Settings
             </div>
           </div>
         </div>
@@ -43,7 +52,7 @@ function HomeScreen() {
           {tabState === "dashboard" ? (
             <Dashboard />
           ) : tabState === "Coupons" ? (
-            <Coupons/>
+            <Coupons />
           ) : (
             tabState
           )}
