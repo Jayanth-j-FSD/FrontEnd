@@ -12,31 +12,39 @@ function Dashboard() {
       </div>
       <div className="tab-section">
         <div className="tab">
-          <img src={tick} className="tick"></img>
+          <div className="img-back">
+            <img src={tick} className="tick"></img>
+          </div>
           <div>
             <h5>12000</h5>
             <p>Active coupons</p>
           </div>
         </div>
         <div className="tab">
-          <img src={like} className="like"></img>
+          <div className="img-back">
+            <img src={like} className="like"></img>
+          </div>
           <div>
             <h5>12000</h5>
             <p>Used coupons</p>
           </div>
         </div>
         <div className="tab">
-          <img src={cross} className="cross"></img>
+          <div className="img-back">
+            <img src={cross} className="cross"></img>
+          </div>
           <div>
             <h5>12000</h5>
-            <p>Expired coupons</p>
+            <p>Expired </p>
           </div>
         </div>
         <div className="tab">
-          <img src={alert} className="alert"></img>
+          <div className="img-back">
+            <img src={alert} className="alert"></img>
+          </div>
           <div>
             <h5>12000</h5>
-            <p>Blocked coupons</p>
+            <p>Blocked </p>
           </div>
         </div>
       </div>

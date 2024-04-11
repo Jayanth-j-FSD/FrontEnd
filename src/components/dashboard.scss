@@ -7,7 +7,7 @@ $font-color2: #eee4b1bb;
 $font-color3: #e3faf2;
 $plain: #eee;
 $font-mian: #48ac9e;
-$btn-back: #FB6C00;
+$btn-back: #fb6c00;
 $green: rgba(96, 240, 96, 0.719);
 
 .dash-main {
@@ -15,13 +15,19 @@ $green: rgba(96, 240, 96, 0.719);
   height: auto;
   // background-color: $primary-background;
   color: $plain;
-
+  width: 1624px;
+  height: 1080px;
+  left: 296px;
+  gap: 0px;
+  opacity: 0px;
+  
   .top-nav {
     display: flex;
     justify-content: flex-start;
     align-items: center;
 
     h4 {
+      color: rgba(0, 0, 0, 1);
       margin-left: 20px;
     }
   }
@@ -41,45 +47,52 @@ $green: rgba(96, 240, 96, 0.719);
       align-items: center;
       gap: 15px;
       padding: 2px;
-      background-color: $font-mian;
-      color: white;
+      background-color: rgba(255, 255, 255, 1);
+      color: rgba(0, 0, 0, 1);
       border-radius: 10px;
-      box-shadow: 0px 0px 30px 0px rgba(134, 134, 134, 0.555);
-
-      img {
-        margin: 5px;
-        height: 40px;
-        width: 40px;
-        padding: 5px;
+      box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.02);
+      .img-back {
+        width: 101.05px;
+        height: 101.05px;
+        gap: 0px;
+        opacity: 0px;
         border-radius: 50px;
-        background-color: rgba(255, 255, 255, 0.686);
+        background-color: rgba(46, 213, 115, 1);
+        img {
+          width: 40px;
+          height: 40px;
+          top: 230px;
+          left: 407px;
+          padding: 5.31px 0px 5.31px 0px;
+          gap: 0px;
+          opacity: 0px;
+        }
       }
 
       div {
         color: $plain;
         margin: 2px 2px;
       }
+      h5 {
+        color: rgba(0, 0, 0, 1);
+      }
 
       p {
-        color: rgba(71, 250, 71, 0.774);
+        color: rgba(0, 0, 0, 1);
         margin: 5px 10px;
         display: flex;
         justify-content: end;
-      }
-
-      .tick {
-        background-color: $green;
-      }
-      .like {
-        background-color: #3742FA;
-      }
-
-      .cross {
-        background-color: #FFA502;
-      }
-
-      .alert {
-        background-color: #ff4757;
+        width: 133px;
+        height: 22px;
+        top: 287px;
+        left: 916px;
+        gap: 0px;
+        opacity: 0px;
+        font-family: Montserrat;
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 21.94px;
+        text-align: left;
       }
     }
   }

@@ -26,9 +26,10 @@ function HomeScreen() {
         <div className="menu-list">
           <div className="logo-section">
             <img src={face} className="image-logo" onClick={handleHome}></img>
-
-            <p>Anna enabel</p>
-            <p>Admin</p>
+           <div className="info">
+           <p className="name">Anna enabel</p>
+            <p className="role">Admin</p>
+           </div>
           </div>
           <div className="tabs-list">
             <div onClick={() => handleTab("dashboard")} className="tabs">
