@@ -5,118 +5,129 @@ $font-color2: #666; // Medium gray
 $accent-color: #fb6c00; // Orange
 $btn-back: #fb6c00; // Orange
 $border: #fb6c0033;
-.main {
-  .left-menu {
+$text-color: #87a7c5;
+.Screen {
+  display: flex;
+  flex-direction: row;
+  .icon {
+    display: flex;
+    width: 33.05px;
+    height: 33.05px;
+    top: 216.47px;
+    left: 56.95px;
+    gap: 0px;
+    opacity: 0px;
+  }
+  .left {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
 
+    .logo-name {
+      width: 199.66px;
+      height: 37.1px;
+      top: 30.45px;
+      left: 30.34px;
+      gap: 0px;
+      opacity: 0px;
+    }
     .logo-section {
-      display: flex;
-      align-items: center;
-      justify-content: flex-start;
-      color: $font-color1;
       width: 248.5px;
       height: 70.5px;
       top: 103.5px;
       left: 26.5px;
       gap: 0px;
-      border: 1px 0px 0px 0px dashed $border;
+      border: 1px 0px 0px 0px;
       opacity: 0px;
-      .info {
+      border: 1px 0px 0px 0px dashed $border;
+      .inside-logosection {
         display: flex;
-        align-items: center;
-        flex-direction: column;
-        .name {
-          font-family: Quicksand;
-          font-size: 16px;
-          font-weight: 600;
-          line-height: 20px;
-          text-align: left;
-          width: 96px;
-          height: 20px;
-          top: 123.13px;
-          left: 135.02px;
-          gap: 0px;
-          opacity: 0px;
-        }
-        .role {
-          width: 36px;
-          height: 15px;
-          top: 144.13px;
-          left: 135.02px;
-          gap: 0px;
-          opacity: 0px;
-          font-family: Quicksand;
-          font-size: 12px;
-          font-weight: 400;
-          line-height: 15px;
-          text-align: right;
-        }
-      }
-
-      img {
-        margin: 10px;
-        width: 50.75px;
+        // color: $font-color1;
+        width: 160.54px;
         height: 50.75px;
         top: 114.75px;
         left: 70.48px;
         gap: 0px;
         opacity: 0px;
+        img {
+          width: 50.75px;
+          height: 50.75px;
+          top: 114.75px;
+          left: 70.48px;
+          gap: 0px;
+          opacity: 0px;
+        }
+        .info {
+          .name {
+            width: 96px;
+            height: 20px;
+            top: 123.13px;
+            left: 135.02px;
+            gap: 0px;
+            opacity: 0px;
+            font-family: Quicksand;
+            font-size: 16px;
+            font-weight: 600;
+            line-height: 20px;
+            text-align: left;
+          }
+          .role {
+            width: 36px;
+            height: 15px;
+            top: 144.13px;
+            left: 135.02px;
+            gap: 0px;
+            opacity: 0px;
+            font-family: Quicksand;
+            font-size: 12px;
+            font-weight: 400;
+            line-height: 15px;
+            text-align: left;
+          }
+        }
       }
+    }
+    
+    .dashboard {
+      display: flex;
+      width: 270px;
+      height: 64.25px;
+      top: 200px;
+      left: 14px;
+      gap: 0px;
+      opacity: 0px;
+    }
+    .Coupons {
+      width: 270px;
+      height: 64.25px;
+      top: 277px;
+      left: 14px;
+      gap: 0px;
+      opacity: 0px;
+    }
+    .History {
+      width: 270px;
+      height: 64.25px;
+      top: 354px;
+      left: 14px;
+      gap: 0px;
+      opacity: 0px;
+    }
+    .Settings {
+      width: 270px;
+      height: 64.25px;
+      top: 431px;
+      left: 14px;
+      gap: 0px;
+      opacity: 0px;
     }
 
     .logout {
-      color: $font-color2;
       position: fixed;
       bottom: 20px;
       left: 80px;
       z-index: 1;
     }
-
-    .menu-list {
-      width: 296px;
-      margin-top: 12px;
-      border-radius: 10px;
-      position: fixed;
-      z-index: 1;
-      left: 10px;
-      background: $secondary-color;
-      overflow-x: hidden;
-      padding: 20px 5px;
-      height: 100vh;
-
-      .tabs-list div {
-        margin-top: 10px;
-        padding: 6px 8px 6px 16px;
-        text-decoration: none;
-        font-size: 25px;
-        color: $font-color2;
-        display: block;
-        background-color: #fafafa;
-        img {
-          padding-right: 10px;
-        }
-      }
-
-      .tabs-list div:hover {
-        padding: 6px 8px 6px 16px;
-        text-decoration: none;
-        font-size: 25px;
-        color: $secondary-color;
-        background-color: $btn-back;
-        display: block;
-        cursor: pointer;
-        transition: background-color 0.5s ease-in-out;
-        transition: color 0.5s ease-in-out;
-        img {
-          color: white;
-          transition: color 0.5s ease-in-out;
-        }
-      }
-    }
   }
-
   .display {
     display: flex;
     background-color: $secondary-color;
